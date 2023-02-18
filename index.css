@@ -64,3 +64,334 @@
 .content {
     margin: 0 auto;
 }
+
+.lead {
+    max-width: 984px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 92px;
+}
+
+.lead__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 0 calc((100% - 720px) / 2);
+    /* 
+    ДЛЯ РЕВЬЮЕРА =)
+    Можно ли использовать вот такую формулу для адаптации штрифта?
+    font-size: calc(40px + (96 - 40) * ((100vw - 320px) / (1280 - 320))); 
+    */
+}
+
+.lead__subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 32px 0 64px;
+    padding: 0 calc((100% - 640px) / 2);
+}
+
+.lead__image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lead__caption {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 8px 0 0;
+}
+
+/* INTRO__________________________________________ */
+.intro {
+    max-width: 984px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+    /* identical to box height, or 107% */
+    color: #FFFFFF;
+    padding: 0 calc(100% - 690px) 0 0;
+    margin: 0 0 40px;
+}
+
+.intro__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    /* or 26px */
+    color: #FFFFFF;
+    padding: 0 calc(100% - 690px) 0 0;
+    margin: 0 0 33px;
+}
+
+.intro__list {
+    list-style: none;
+    padding: 0 calc(100% - 690px) 0 0;
+    margin: 0;
+}
+
+.intro__list-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    color: #FFFFFF;
+}
+
+.intro__span-accent {
+    font-weight: normal;
+}
+
+/* GALLERY____________________________________ */
+.gallery {
+    max-width: 1184px;
+    margin: 92px auto;
+}
+
+.photo-grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 284px));
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.photo-grid__item {
+    width: 100%;
+}
+
+.photo-grid__item-photo {
+    width: 100%;
+}
+
+/* PLACES_______________________________________ */
+.places {
+    max-width: 984px;
+    margin: 0 auto 92px;
+}
+.place {
+    display: grid;
+    grid-template-columns: minmax(auto, 460px) minmax(auto, 484px);
+    grid-template-rows: min-content min-content;
+    column-gap: 40px;
+    row-gap: 48px;
+    grid-template-areas:
+        "place__title place__website"
+        "place__image place__paragraphs";
+    margin: 0 auto 80px;
+}
+.place__image {
+    grid-area: place__image;
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.place__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    /* or 106% */
+    color: #FFFFFF;
+    grid-area: place__title;
+    margin: 0;
+}
+
+.place__website {
+    grid-area: place__website;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.place__url-heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height, or 100% */
+    letter-spacing: 2px;
+    color: #AAAAAA;
+    margin: 0 0 12px;
+}
+
+.place__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.place__link:hover {
+    opacity: 0.5;
+    transition: opacity ease-out 1s;
+}
+
+.place__paragraphs {
+    grid-area: place__paragraphs;
+}
+.place__paragraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    /* or 29px */
+    color: #FFFFFF;
+    margin: 0 0 26px;
+}
+
+.place__paragraph:last-of-type {
+    margin: 0;
+}
+
+/* COVER________________________________________ */
+.cover {
+    max-width: 1184px;
+    margin: 0 auto;
+}
+.cover__link {
+    background-image: url(./image/cover-trains.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 740px;
+}
+.cover__link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #2A2C2F;
+    opacity: 0.3;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.cover__link:hover:before {
+    opacity: 0.8;
+}
+
+.cover__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    /* or 106% */
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 calc((100% - 560px) /2) 0;
+}
+.cover__subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+    text-align: center;
+    color: #FFFFFF;
+    margin: 32px 0 0;
+    padding: 0 calc((100% - 360px) / 2);
+}
+/* FOOTER________________________________________ */
+.footer {
+    max-width: 1184px;
+    margin: 92px auto 0;
+    padding: 0 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+.footer__link-item {
+    margin: 0 18px 0 0;
+}
+.footer__link-item:last-child {
+    margin: 0;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+    color: #FFFFFF;
+    opacity: 1;
+}
+.footer__link:hover {
+    opacity: 0.5;
+    transition: opacity ease-out 1s;
+}
+
+.footer__copyright {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+}
+
