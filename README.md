@@ -2,7 +2,7 @@
 В этом проекте после изучения новых тем. 
 Использовали адаптивную верстку чтоб макет (из Figma ) был полностью адаптирован под различные устройства.
 
-[Ссылка на проект Russian-Travel](https://Fe1ch.github.io/russian-travel/) 
+[Ссылка на проект Russian-Travel](https://Fe1ch.github.io/russian-travel/.index.html) 
 
 ### H3 Использовы технологии:
 1. Работа с Figma
