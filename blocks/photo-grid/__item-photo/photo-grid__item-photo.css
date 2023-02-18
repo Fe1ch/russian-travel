@@ -1,3 +1,4 @@
 .photo-grid__item-photo {
     width: 100%;
+    display: block;
 }

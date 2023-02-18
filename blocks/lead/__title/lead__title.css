@@ -1,5 +1,4 @@
 .lead__title {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 96px;
@@ -8,11 +7,6 @@
     color: #FFFFFF;
     margin: 0 auto;
     padding: 0 calc((100% - 720px) / 2);
-    /* 
-    ДЛЯ РЕВЬЮЕРА =)
-    Можно ли использовать вот такую формулу для адаптации штрифта?
-    font-size: calc(40px + (96 - 40) * ((100vw - 320px) / (1280 - 320))); 
-    */
 }
 
 @media screen and (max-width:716px) {

@@ -39,16 +39,3 @@
         margin: 0 auto 50px;
     }
 }
-
-@media screen and (max-width: 320px) {
-    .place {
-        grid-template-columns: 320px;
-        grid-template-areas:
-            "place__title"
-            "place__website"
-            "place__image"
-            "place__paragraphs";
-        row-gap: 32px;
-        margin: 0 auto 50px;
-    }
-}

@@ -1,5 +1,4 @@
 .footer__copyright {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -15,5 +14,6 @@
         line-height: 14px;
         /* identical to box height, or 100% */
         padding: 0 calc((100% - 560px) / 2);
+        text-align: left;
     }
 }
